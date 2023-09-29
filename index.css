@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+main div.container{
+    min-width: 350px;
+    min-height: 550px;
+    width: 450px;
+    height: 650px;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+}
+div.container div.container_header{
+    height: 250px;
+    min-height: 200px;
+    background-color: brown;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+div.container div.container_body{
+    background-color: beige;
+    padding: 15px;
+    height: 65%;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+div.container_body div.derivadas{
+    background-color: aquamarine;
+    width: 70%;
+    height: 6vh;
+}
+div.container_body div.operaciones{
+    background-color:  coral ;
+    width:30%;
+    height: calc(300px + 6vh);
+}
+div.container_body div.numeros{
+    background-color: blueviolet;
+    width: 70%;
+    min-height: 200px;
+    height: 300px;
+    order: -1;
+}
